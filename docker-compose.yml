@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  squid-proxy:
+    image: squid:4.9
+    build: .
+    container_name: squid
+    ports:
+      - 3128:3128
